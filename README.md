@@ -11,25 +11,4 @@ This project offers a Python-based solution for analyzing text content within PD
 - **Flexible Integration:** Provides a user-friendly interface for querying PDF documents, with options for customizing search parameters and output formats.
 - **Documentation and Examples:** Includes comprehensive documentation and usage examples to facilitate easy integration and customization for developers.
 
-**Usage:**
-
-```python
-# Example usage:
-from pdf_text_analysis import PDFTextAnalyzer
-
-# Initialize PDFTextAnalyzer with PDF file path
-pdf_analyzer = PDFTextAnalyzer('example.pdf')
-
-# Extract text content from the PDF
-text_content = pdf_analyzer.extract_text()
-
-# Perform language analysis using OpenAI API
-analysis_results = pdf_analyzer.analyze_text(text_content)
-
-# Query the analyzed text using Pinecone for specific keywords
-relevant_paragraphs = pdf_analyzer.query_text(analysis_results, 'keyword')
-
-# Display relevant paragraphs
-print(relevant_paragraphs)
-```
 
